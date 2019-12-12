@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="ImageClass.js"></script>
+    <link href="GalleryStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--To use font awesome icons-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--Adding Jquery to the file-->
+    <script src="Functionality.js"></script>
+</head>
+<body>
+    <h1>Gallery</h1> 
+
+    <div id="search_area">
+        <button id="btn_search_tag" onclick="getImagesByTag()"><i class="fa fa-search fa-lg"></i></button>
+        <input id="txt_tag" type="text" dir="ltr" onkeyup="checkKey(event)"/>
+    </div>
+
+    <div id="enlarged_img" class="hide">
+        <button id="large_img_btn" onclick="cancelLarge()"><i class="fa fa-close fa-lg"></i></button>   
+    </div>
+
+    <div id="image_gallery" onscroll="morePics()">
+        
+    </div>
+</body>
+</html>
